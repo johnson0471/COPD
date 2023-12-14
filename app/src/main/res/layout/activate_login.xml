@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_login"
+        android:layout_alignEnd="@+id/edt_password"
+        android:background="@drawable/btnmain"
+
+        android:layout_alignRight="@+id/edt_password"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:text="註冊"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <EditText
+        android:id="@+id/edt_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/background_holo_light"
+        android:ems="10"
+        android:hint="  account"
+        android:inputType="none"
+        android:textColor="@color/common_signin_btn_dark_text_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnmain"
+
+        android:layout_alignStart="@+id/edt_password"
+        android:layout_alignLeft="@+id/edt_password"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:text="登入"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_reg"
+        android:layout_alignStart="@+id/edt_userName"
+        android:layout_alignLeft="@+id/edt_userName"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_holo_light"
+        android:ems="10"
+        android:hint=" password"
+        android:inputType="textPassword"
+        android:textColor="@color/common_signin_btn_dark_text_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userName"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="274dp"
+        android:layout_above="@+id/edt_userName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        app:srcCompat="@drawable/login_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

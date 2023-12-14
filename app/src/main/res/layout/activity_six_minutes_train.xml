@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SixMinutesTrain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="155dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/underline">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical|right"
+                android:text="User:" />
+
+            <TextView
+                android:id="@+id/txv_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:gravity="center_vertical|left" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/underline">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical|right"
+                android:text="Data:"/>
+
+
+            <TextView
+                android:id="@+id/txv_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30dp"
+                android:gravity="center_vertical|left" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Item: 6 MWT"
+                android:gravity="center_vertical|left"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:text="Total Distance :"/>
+
+
+            <TextView
+                android:id="@+id/txv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textSize="23dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="(m)"
+                android:textSize="23dp"
+                android:gravity="center_vertical|left"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="Total Step :"/>
+
+
+            <TextView
+                android:id="@+id/txv_step"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center_vertical|left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|right"
+                android:text="FVCpred(L) :"/>
+
+
+            <TextView
+                android:id="@+id/txv_FVCpred"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center_vertical|left"
+                android:text="0.00"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="FEV1pred(L) :"/>
+
+
+            <TextView
+                android:id="@+id/txv_FEV1pred"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center_vertical|left"
+                android:text="0.00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="FVCpost(L) :"/>
+
+            <TextView
+                android:id="@+id/txv_FVCpost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:textSize="23dp"
+                android:text="0.00"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="FEV1post(L) :"/>
+
+
+            <TextView
+                android:id="@+id/txv_FEV1post"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center_vertical|left"
+                android:text="0.00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="FEV1post/FVCpost(%) :"/>
+
+
+            <TextView
+                android:id="@+id/txv_result1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="FEV1post/FEV1pred(%) :"/>
+
+
+            <TextView
+                android:id="@+id/txv_result2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="23dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/backgray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center|left"
+                android:text="FVCpost/FVCpred(%) :"/>
+
+
+            <TextView
+                android:id="@+id/txv_result3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="23dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/btn_sixstart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:text="Start"
+                android:autoSizeTextType="uniform"/>
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:text="Stop"
+                android:autoSizeTextType="uniform"/>
+
+            <Button
+                android:id="@+id/btn_sixback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="back"
+                android:autoSizeTextType="uniform"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

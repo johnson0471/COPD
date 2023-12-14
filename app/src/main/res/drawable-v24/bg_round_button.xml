@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" ><!--沒點選按鈕的時候-->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"><!--按鈕形狀-->
+            <corners android:radius="180dp" />
+            <solid android:color="@color/gray" /><!--按鈕背景填充色-->
+        </shape>
+    </item>
+
+    <!--當點選按鈕的時候變為藍色-->
+    <item android:state_pressed="true"><!--沒點選按鈕的時候-->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"><!--按鈕形狀-->
+            <corners android:radius="180dp" />
+            <solid android:color="@color/grayDark" /><!--按鈕背景填充色-->
+        </shape>
+    </item>
+
+
+</selector>

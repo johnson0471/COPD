@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#1F736A</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#DCDCDC</color>
+    <color name="grayDark">#8F8F8F</color>
+    <color name="colorPrimary">#00D4BE</color>
+    <color name="colorPrimaryDark">#00594D</color>
+    <color name="green">#30AC9E</color>
+    <color name="greenDdark">#007A6A</color>
+    <color name="greenDark">#00594D</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background_holo_light">#1984B1</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+</resources>
